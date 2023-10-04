@@ -7,8 +7,8 @@ def frequencies(items):
     for value in items:
         count = 0
         for val in items:
-            if value == val:
-                count+=1
-        frequencies[value] = count
-        
+            if str(value) == str(val):
+                count += 1
+        frequencies[str(value)] = count
+
     return frequencies
